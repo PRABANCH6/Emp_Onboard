@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/emp_help_support.css' %}">
+    <title>Employee Support & help </title>
+</head>
+
+<body>
+    <div>
+        {% include 'accounts/Employee/employee_header.html' %}
+    </div>
+    <!-- <header> {% include 'accounts/Employee/emp_nav.html' %}</header> -->
+    <div> {% include 'accounts/Employee/sidebar.html' %}</div>
+
+    <div class="container">
+        <div class="content">
+            <h1>Support & Help</h1>
+            <div class="content-box">
+                <div class="content-box-item">
+                    <h2>FAQ</h2>
+                    <p>Find answers to your questions</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <hr>
+                <br>
+                <div class="content-box-item">
+                    <h2>Help Center</h2>
+                    <p>Get help from our support team</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <hr>
+                <br>
+                <div class="content-box-item">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch with us</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

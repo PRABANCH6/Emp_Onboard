@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Onboarding</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">OnboardEase</div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="{% url 'employee_login' %}" class="btn btn-primary1">Login</a>
+            <a href="#" class="btn btn-primary2">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to OnboardEase!</h1>
+            <p>Your hassle-free onboarding journey starts here. Connect, learn, and grow with ease.</p>
+            <!-- <a href="#get-started" class="btn btn-primary">Get Started</a> -->
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose OnboardEase?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Streamlined Process</h3>
+                    <p>Complete onboarding tasks efficiently and stress-free.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Document Management</h3>
+                    <p>Upload, review, and approve documents with ease.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Training Access</h3>
+                    <p>Gain instant access to mandatory training modules.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Team Connection</h3>
+                    <p>Meet your manager and team before your first day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 OnboardEase. All Rights Reserved.</p>
+            <ul class="social-links">
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

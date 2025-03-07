@@ -1,0 +1,19 @@
+ footer{
+    width: 100%;
+    position:relative;
+    height: 120px;
+    background:linear-gradient(120deg, #171717, #5c5b5a);
+}
+footer p{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    color: #fff;
+}
+.social-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 4px;
+} 

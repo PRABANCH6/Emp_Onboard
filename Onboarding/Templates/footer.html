@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <title>footer</title>
+</head>
+
+<body>
+    <footer class="footer">
+        <p>&copy; 2024 OnboardEase. All rights reserved.</p><br>
+        <ul class="social-links">
+            <li><a href="#"><img src="{% static 'img/Linkedin.png' %}" width="40" height="32"></a></li>
+            <li><a href="#"><img src="{% static 'img/facebook.png' %}" width="32" height="32"> </a></li>
+            <li><a href="#"><img src="{% static 'img/twitter.png' %}" width="40" height="36"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html> -->
+
+<!-- In footer.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <title>Footer</title>
+</head>
+
+<body>
+    <div style="height: 50px;"></div> <!-- Add this div for spacing -->
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2024 OnboardEase. All rights reserved.</p><br>
+        <ul class="social-links">
+            <li><a href="#"><img src="{% static 'img/Linkedin.png' %}" width="40" height="32"></a></li>
+            <li><a href="#"><img src="{% static 'img/facebook.png' %}" width="32" height="32"> </a></li>
+            <li><a href="#"><img src="{% static 'img/twitter.png' %}" width="40" height="36"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

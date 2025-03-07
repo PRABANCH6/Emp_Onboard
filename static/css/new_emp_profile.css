@@ -1,0 +1,156 @@
+
+body{
+    background-color: #b1acac;
+}
+
+main{
+    height: 1200px;
+    position: relative;
+    line-height: 40px;
+    
+}
+#signup_button{
+    width: 200px;
+    height: 50px;
+    position:absolute;
+    left: 380px;
+    font: 900;
+    font-size: 20px;    
+   
+}
+#reset_button{
+    width: 200px;
+    position:absolute;
+    left: 600px;
+    height: 50px;
+    font: 900;
+    font-size: 20px;  
+    
+}
+label{
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.25px;
+}
+input{
+    border-radius: 16px;
+    border: none;
+    padding: auto;
+    width: 300px;
+    font-size: 22px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+select{
+    border-radius: 16px;
+    font-size: 22px;
+    width: 350px;
+    height: 30px;
+    border: none;
+    padding: 20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+label, input, select{
+   line-height: 60px;
+}
+/* footer{
+    width: 100%;
+    position:relative;
+    bottom: 0;
+    height: 12%;
+    background:linear-gradient(120deg, #171717, #5c5b5a);
+    z-index: 1;
+} */
+.right-side{
+    position: absolute;
+    left: 920px;
+    top: 120px;
+    font-size: 18px;
+}
+.left-side{
+    font-size: 18px;
+    position: absolute;
+    right: 630px;
+    top: 120px;
+}
+
+/* #terms{
+    position: relative;
+    left: 100px;
+    top: 700px;
+    font-size: 18px;
+} */
+
+.form-checkbox{
+    position: relative;
+    left: 100px;
+    top: 950px;
+    font-size: 18px;
+}
+#checkbox_terms{
+    position: relative;
+    left: 390px;
+    top: 3px;
+    /* top: 950px; */
+    font-size: 18px;
+    /* padding: 10px; */
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+
+}
+#label_terms{
+    position: relative;
+    left: 400px;
+    /* top: 950px; */
+    font-size: 18px;
+}
+#submit_button{
+    position: relative;
+    left: 100px;
+    top: 950px;
+    padding: 10px;
+    width: auto;
+
+}
+#signup_title{
+    position: absolute;
+    top: -50px;
+    left: 450px;
+    font-size: 35px;
+    font-weight: 900;
+    font-style: bold;
+    font-family: 'Rubik Vinyl';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}   
+.containor {
+    line-height: 30px;
+    gap: 20px;
+}
+.EmployeeCore_form{
+    display:block;
+    position: relative;
+    left: 0px;
+    top: 100px;
+    line-height: 40px;
+}
+.ContactForm{
+    display:block;
+    
+
+    letter-spacing: 2px;
+}
+input{
+    letter-spacing: 1.5px;
+    font: 600;
+    font-size: 30px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+
+}
+.EmployeeBankDetails{
+    display:block;
+    position: relative;
+    left: 100px;
+    top: 700px;
+    letter-spacing: 2px;
+}

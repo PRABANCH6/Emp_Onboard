@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/emp_home.css' %}">
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Employee Home</title>
+</head>
+
+<body>
+    <header class="header">
+        {% include 'accounts/Employee/employee_header.html' %}
+    </header>
+
+    <!-- <div class="aside_bar">
+        {% include 'accounts/Employee/sidebar.html' %}  
+    </div> -->
+    <div class="header1" id="emp_home_header">
+        <h1>Welcome to OnboardEase!</h1>
+        <hr>
+        <!-- <p>Your hassle-free onboarding journey starts here. Connect, learn, and grow with ease.</p> -->
+    </div>
+
+    <main class="main">
+
+        <section class="profile_section">
+            <a href="{% url 'emp_profile' %}">
+                <img src="{% static 'img/nav_profile_img/profile1.png' %}" alt="Profile" width="200px" height="200px"
+                    id="profile_img_home">
+                <h2 id="profile_name_home">Profile</h2>
+            </a>
+        </section>
+
+        <section class="onboarding_section">
+            <a href="{% url 'emp_onboarding' %}">
+                <img src="{% static 'img/nav_profile_img/onboarding1.png' %}" alt="Onboarding" width="150px"
+                    height="150px" id="onboarding_img_home">
+                <h2 id="onboarding_name_home">Onboarding</h2>
+                <!-- <p>Start the onboarding process for your new employee.</p> -->
+            </a>
+        </section>
+        <section class="attendance_section">
+            <a href="{% url 'emp_attendance' %}">
+                <img src="{% static 'img/nav_profile_img/attendance.png' %}" alt="Attendance" width="100px"
+                    height="100px" id="attendance_img_home">
+                <h2 id="attendance_name_home">Attendance</h2>
+                <!-- <p>View and update your attendance records.</p> -->
+            </a>
+        </section>
+        <section class="performance_section">
+            <a href="{% url 'emp_performance' %}">
+                <img src="{% static 'img/nav_profile_img/performance.png' %}" alt="Performance" width="100px"
+                    height="100px" id="performance_img_home">
+                <h2 id="performance_name_home">Performance</h2>
+                <!-- <p>View and update your performance records.</p> -->
+            </a>
+        </section>
+        <section class="training_section">
+            <a href="{% url 'emp_training' %}">
+                <img src="{% static 'img/nav_profile_img/training1.png' %}" alt="Training" width="130px" height="130px"
+                    id="training_img_home">
+                <h2 id="training_name_home">Training</h2>
+                <!-- <p>View and complete training courses.</p> -->
+            </a>
+        </section>
+        <section class="documents_section">
+            <a href="{% url 'emp_documents' %}">
+                <img src="{% static 'img/nav_profile_img/document.png' %}" alt="Documents" width="100px" height="100px"
+                    id="documents_img_home">
+                <h2 id="documents_name_home">Documents</h2>
+                <!-- <p>Upload and review your documents.</p> -->
+            </a>
+        </section>
+        <section class="salary_section">
+            <a href="{% url 'emp_salary' %}">
+                <img src="{% static 'img/nav_profile_img/payroll.png' %}" alt="Salary" width="150px" height="140px"
+                    id="salary_img_home">
+                <h2 id="salary_name_home">Payroll</h2>
+
+            </a>
+        </section>
+        <section class="feedback_section">
+
+            <a href="{% url 'emp_feedback' %}">
+                <img src="{% static 'img/nav_profile_img/feedback.png' %}" alt="Feedback" width="150px" height="150px"
+                    id="feedback_img_home">
+                <h2 id="feedback_name_home">Feedback</h2>
+                <!-- <p>Give feedback and get help and support.</p> -->
+            </a>
+        </section>
+        <section class="help_support_section">
+            <a href="{% url 'emp_help_support' %}">
+                <img src="{% static 'img/nav_profile_img/help_support.png' %}" alt="Help & Support" width="150px"
+                    height="150px" id="help_support_img_home">
+                <h2 id="help_support_name_home">Help & Support</h2>
+                <!-- <p>Get help and support from your team.</p> -->
+            </a>
+        </section>
+        <!-- <section class="training_section">
+            <h2>Training</h2>
+            <p>View and complete training courses.</p>
+            <a href="{% url 'emp_training' %}">Training</a>
+        </section> -->
+
+    </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,303 @@
+*{
+    font-family: 'Raleway';
+}
+.container1{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    height: 450px;
+    position: relative;
+    left: 230px;
+    top: 70px;
+    /* gap: 10px; */
+}
+.rightside_bg{
+    position: relative;
+    width: 100px;
+    background-color: rgb(65, 98, 126);
+}
+
+.right_content{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    right: 250px;
+    top: -33px;
+   
+}
+/* .left_content{
+    /* background-color: antiquewhite; */
+    /* width: 600px; */
+    /* height: 400px; */
+
+#signin{
+    position: relative;
+    left: 380px;
+    top: 70px;
+    font-family: 'Rubik Vinyl';
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+label{
+    position: relative;
+    left: 400px;
+    top: 100px;
+
+}
+#username_label{
+    position: relative;
+    left: 315px;
+    top: 120px;
+    font-family: 'Raleway';
+    font-size: 20px;
+    letter-spacing: 1px;
+    font: 400;
+}
+#password_label{
+    position: relative;
+    font-family: 'Raleway';
+    left: 315px;
+    top: 160px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font: 400;
+}
+#input_pwd{
+    position: relative;
+    left: 430px;
+    top: 120px;
+    padding: 10px;
+    border-radius: 16px;
+    border: rgb(4, 3, 3) solid 0.01px;
+    font-family: 'Raleway';
+}
+#input_uname{
+    position: relative;
+    left: 325px;
+    top: 120px;
+    padding: 10px;
+    border-radius: 16px;
+    letter-spacing: 1px;
+    border: rgb(4, 3, 3) solid 0.01px;
+    font-family: 'Raleway';
+}
+#toggle_password{
+    position: relative;
+    left: 395px;
+    top: 120px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#signup_button{
+    position: relative;
+    left: 400px;
+    top: 150px;
+    padding: 10px;
+    width: 110px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Raleway';
+    font-size: 18px;
+    border: none;
+    background: transparent;
+}
+
+.password_input svg{
+    position: relative;
+    top: 85px;
+    left: 590px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#signup_button:hover{
+    background-color: #5B9BD5;
+    color: white;
+    letter-spacing: 1.2px;
+    /* transition: 1.2s; */
+    transition: linear 0.5s;
+}
+
+.btn-primary1:hover{
+    background-color: #5B9BD5;
+    color: white;
+}
+#signin_button{
+    position: relative;
+    left: 380px;
+    top: 150px;
+    padding: 10px;
+    width: 110px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Raleway';
+    font-size: 18px;
+    border: none;
+    background: transparent;
+}
+#signin_button:hover{
+    background-color: #5B9BD5;
+    color: white;
+    letter-spacing: 1.2px;
+    /* transition: 1.2s; */
+    transition: linear 0.5s;
+}
+#signin_button a{
+    text-decoration: none;
+    color: black;
+}
+#signup_button a{
+    text-decoration: none;
+    color: black;
+}
+.signin_footer{
+    position: relative;
+    /* left: 400px; */
+    top: 140px;
+    font-family: 'Raleway';
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.alert {
+    position: relative;
+    left: 370px;
+    width: 280px;
+    top: 175px;
+    color: red;
+    font-family: 'Raleway';
+    font-size: 15px;
+    letter-spacing: 1px;
+   
+}
+/* form input:focus + label,
+form input:not(:placeholder-shown) + label {
+  top: -15px;
+  left: 10px;
+  font-size: 12px;
+  color: #333;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #aaa;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+} */
+
+/* form input:focus + label,
+form input:not(:placeholder-shown) + label {
+    top: -15px;
+    left: 10px;
+    font-size: 12px;
+    color: #333;
+}
+  
+  form input:focus {
+    outline: none;
+    border-color: #aaa;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  } */
+
+.employee_login{
+    position: absolute;
+    top: 400px;
+    left: 320px;
+    width: 900px;
+}
+
+@media (max-width: 768px) {
+    .container1{
+        width: 500px;
+        height: 900px;
+        position: relative;
+        right: 700px;
+    }
+    .left_content img{
+        position: relative;
+        left: 100px;
+    }
+    .right_content{
+        position: relative;
+        right: 600px;
+        top: 300px;
+    }
+    #username_label{
+        position: relative;
+        left: 100px;
+    }
+    #password_label{
+        position: relative;
+        left: 100px;
+    }
+    #input_pwd{
+        position: relative;
+        left: 100px;
+    }
+    #input_uname{
+        position: relative;
+        left: 200px;
+    }
+    #toggle_password{
+        position: relative;
+    }
+    #signin{
+        position: relative;
+        top: 100px;
+    }
+    .footer{
+        position: relative;
+        top: 400px;
+    }
+}@media (max-width: 480px) {
+    .container1{
+        width: 500px;
+        height: 900px;
+        position: relative;
+        right: 700px;
+    }
+    .left_content img{
+        position: relative;
+        left: 100px;
+    }
+    .right_content{
+        position: relative;
+        right: 600px;
+        top: 300px;
+    }
+    #username_label{
+        position: relative;
+        left: 100px;
+    }   
+    #password_label{
+        position: relative;
+        left: 100px;
+    }
+    #input_pwd{
+        position: relative;
+        left: 100px;
+    }
+    #input_uname{
+        position: relative;
+        left: 200px;
+    }
+    #toggle_password{
+        position: relative;
+    }
+    #signin{
+        position: relative;
+        top: 100px;
+    }
+    .footer{
+        position: relative;
+        top: 400px;
+    }
+}   
+/* 
+.aside{
+    
+} */

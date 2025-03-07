@@ -1,0 +1,83 @@
+*{
+    font-family: 'Raleway';
+}
+header {
+    background: #5B9BD5;
+    color: #fff;
+    padding: 1rem;
+    width: 100%;    
+    z-index: 1;
+}
+
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    top: 12px;
+    /* left: 30px; */
+    right: 10px;
+}
+
+
+.btn{
+    position: relative;
+    top: -5px;
+    right: 100px;
+    margin-top: 1rem;
+    font-size: 1rem;
+   
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    width: auto;
+}
+#signup_btn{
+    position: relative;
+    right: 50px;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+#signin_btn{
+    position: relative;
+    left: 110px;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    left: 10px;
+}
+.btn:hover {
+    opacity: 0.8;
+    border-radius: 25px;
+    animation : btn 7s ease-in-out infinite ;
+    padding: 7px 20px 7px 20px;
+    width: 140px;
+    transition: ease-in-out 2s;
+    font-size: 19px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #000000, #eb6b03);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+#logout_btn{
+    position: relative;
+    left: 10px;
+    margin-top: 1rem;
+    font-size: 1rem;
+}

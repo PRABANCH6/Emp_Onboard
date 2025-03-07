@@ -1,0 +1,234 @@
+*{
+    font-family: 'Raleway';
+}
+main{
+    background-color: #ccc;
+    width: 1100px;
+    height:800px;
+    position: relative;
+    left: 200px;    
+    top: 45px;
+    border-radius: 16px;
+
+}
+input{
+    position: relative;
+    left: 20px;
+    letter-spacing: 2px;
+}
+.signup_content{
+    position: absolute;
+    /* top: 100px; */
+    left: 580px;
+    top: 180px;
+}
+form{
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    position: relative;
+    top:535px;
+    /* left: 100px; */
+    right: 350px;
+    line-height: 36px;
+}
+
+.signup_form{
+    line-height: 30px;
+    position: absolute;
+    top: -500px;
+    width: 100px;
+} 
+input{
+    /* line-height: 10px; */
+    padding: 10px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    width: 300px;
+    line-height: 10px;
+}
+
+label{
+    position: relative;
+    left: 10px;
+    font-size: 20px;
+    font-family: 'Raleway';
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    line-height: 10px;
+}
+
+button{
+    position: relative;
+    left: 100px;
+    top: 20px;
+    padding: 10px;
+    width: 110px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Raleway';
+    font-size: 16px;
+    border: none;
+    background-color: #5B9BD5;
+    color: #fff;
+}
+form{
+    line-height: 45px;
+}
+#signup_title{
+    position: relative;
+    left: 100px;
+    top: -10px;
+    font-family: 'Rubik Vinyl'; 
+    font-size: 36px;
+    /* font-weight: bold; */
+    letter-spacing: 3px;
+}
+/* .btn{
+    position: relative;
+    left: 100px;    
+
+    top: 20px;
+    padding: 10px;
+    width: 110px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Raleway';
+    font-size: 18px;
+    border: none;
+    background-color: #5B9BD5;
+    color: #fff;
+} */
+.btn .signup_btn_form{
+    position: relative;
+    left: 150px;
+    top: 20px;
+    padding: 10px;
+    width: 110px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Raleway';
+    font-size: 18px;
+    border: none;
+    background-color: #5B9BD5;
+    color: #fff;
+}
+#signup_button_form{
+    position: relative;
+    left: 70px;
+    top: 10px;
+    padding: 10px;
+    width: 110px;
+    letter-spacing: 1.2px;
+    
+}
+#reset_button_form{
+    position: relative;
+    left: 100px;
+    top: 10px;
+    padding: 10px 30px 10px 30px;
+    letter-spacing: 1.2px;
+}
+.signup_form{
+    position: absolute;
+    left: 400px;
+    
+}
+.signup_footer{
+    position: relative;
+    top: 100px;
+    /* left: 400px; */
+}
+
+.messages{
+    position:absolute;
+    top: 750px;
+    left: 800px;
+    border-radius: 16px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    padding: 10px;
+    width: 400px;
+
+    height: 100px;
+    padding: 10px;
+}
+
+
+.department{
+    position: relative;
+    left: 10px;
+    font-size: 27px;
+    font-family: 'Raleway';
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 15px;
+    height: 100px;
+    width: 200px;
+    border-radius: 5px;
+
+}
+.employee_shift{
+    position: relative;
+    left: 10px;
+    font-size: 27px;
+    font-family: 'Raleway';
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 15px;
+    height: 100px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.employee_type{
+    position: relative;
+    left: 10px;
+    font-size: 27px;
+    font-family: 'Raleway';
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 15px;
+    height: 100px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.position{
+    position: relative;
+    left: 10px;
+    font-size: 27px;
+    font-family: 'Raleway';
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 15px;
+    height: 100px;
+    width: 200px;
+    border-radius: 5px;
+}
+.job_type{
+    position: relative;
+    left: 10px;
+    font-size: 27px;
+    font-family: 'Raleway';
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 15px;
+    height: 100px;
+    width: 200px;
+    border-radius: 5px;
+}
+.employee_band{
+    position: relative;
+    left: 10px;
+    font-size: 27px;
+    font-family: 'Raleway';
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 15px;
+    height: 100px;
+    width: 200px;
+    border-radius: 5px;
+}

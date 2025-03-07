@@ -1,0 +1,61 @@
+I understand now. You want to extract the title from the content of the `<h2>` tag and use it as the actual content of the tag. This is a bit tricky because we're essentially parsing HTML within HTML. However, we can achieve this using Django's template tags and filters. Here's how you can do it:
+
+    1. First, let's create a custom template filter to extract the title. Create a new file named `utils.py` in your app's `templatetags` directory:
+    
+    ```python
+    # templatetags/utils.py
+    from django import template
+    import re
+    
+    register = template.Library()
+    
+    @register.filter(name='extract_title')
+    def extract_title(value):
+        match = re.search(r'title:(.*)}', value)
+        if match:
+            return match.group(1).strip()
+        return ''
+    ```
+    
+    2. Now, in your template, you can use this filter to extract the title and then use it within the `<h2>` tag. Here's how you can modify your template:
+    
+    ```html
+    {% load utils %}
+    
+    <h2 class="profile-title">{{ title|extract_title }}</h2>
+    ```
+    
+    This approach does the following:
+    
+    - The `extract_title` filter uses a regular expression to find the content between `title:` and the closing curly brace `}`.
+    - It strips any leading or trailing whitespace from the extracted title.
+    - If no match is found, it returns an empty string.
+    
+    However, this method assumes that the `title` variable always contains the same format of content. If the format varies, you might need to adjust the regular expression accordingly.
+    
+    Alternatively, if you have more control over how the `title` variable is populated in your view, you could simplify this process:
+    
+    1. In your view, split the title content:
+    
+    ```python
+    def your_view(request):
+        # Assuming your title comes from somewhere...
+        raw_title = "title:Some Actual Title}"
+        title_parts = raw_title.split(':')
+        if len(title_parts) > 1:
+            actual_title = title_parts[1].strip('}')
+        else:
+            actual_title = ''
+        
+        return render(request, 'your_template.html', {'actual_title': actual_title})
+    ```
+    
+    2. Then in your template, simply use:
+    
+    ```html
+    <h2 class="profile-title">{{ actual_title }}</h2>
+    ```
+    
+    This approach is cleaner and more reliable, especially if you have control over how the title is structured in your backend.
+    
+    Which of these approaches aligns better with your current setup and requirements? Or do you need any modifications to either of these solutions?

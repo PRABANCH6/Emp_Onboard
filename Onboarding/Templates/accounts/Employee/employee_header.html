@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/employeee_header.css' %}">
+    <title>{% block title %} Employee Header {% endblock %}</title>
+
+    <script src="{% static 'js/emp_header.js' %}"></script>
+</head>
+
+<body>
+    <header class="header">
+        <!-- <p id="page_title">Title:{{ page_title }}</p> -->
+        <p id="dateTime">Loading...</p>
+        <p id="username_header">Welcome, {{ user.first_name }}</p>
+        <p id="header_notifications"><a href="{% url 'emp_notifications' %}"><img
+                    src="{% static 'img/notifications-active-svgrepo-com.svg' %}" width="30px" height="30px"></a></p>
+        <p id="header_settings"><a href="{% url 'emp_settings' %}"><img
+                    src="{% static 'img/settings-svgrepo-com.svg' %} " width="30px" height="30px">
+                <p id="header_logout"><a href="{% url 'logout' %}"><img src="{% static 'img/logout-svgrepo-com.svg' %}"
+                            width="30px" height="30px"></a>
+                </p>
+    </header>
+    <!-- <script>
+        function showDateTime() {
+        const now = new Date();
+        const formattedDateTime = now.toLocaleString(); // Format the date and time
+        document.getElementById("dateTime").textContent = formattedDateTime;
+        }
+
+        // Call the function initially
+        showDateTime();
+
+        // Update the date and time every second
+        setInterval(showDateTime, 1000);
+        </script> -->
+    <script>
+        function showDateTime() {
+            const now = new Date();
+            const options = {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true // Use 12-hour format
+            };
+            const formattedDateTime = now.toLocaleString('en-US', options);
+
+            // Replace comma with period and adjust space before AM/PM
+            const formattedString = formattedDateTime.replace(',', '.').replace(' ', ' ');
+
+            document.getElementById("dateTime").textContent = formattedDateTime;
+        }
+
+        // Call the function initially
+        showDateTime();
+
+        // Update the date and time every second
+        setInterval(showDateTime, 1000);
+
+        // Update the page title
+        document.addEventListener('DOMContentLoaded', function () {
+            var currentPageTitle = "{{ page_title|safe }}";
+            document.querySelector('.page_title').textContent = currentPageTitle;
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/confirmation.css' %}">
+    <title>User Confirmation Page</title>
+</head>
+
+<body>
+    <header class="header">
+        {% include 'accounts/Employee/employee_header.html' %}
+    </header>
+    {% comment %} {% load url from future %} {% endcomment %}
+
+    <div class="Confirmation_content">
+        {% comment %} <img src="{% static 'img/confirmation.png' %}" alt="Image" width="400px" height="400px"> {% endcomment %}
+
+        <h1>User Confirmation Page</h1>
+        <p>Thank you for signing up. Please check your email to confirm your account.</p>
+        <p>Click <a href="{% url 'user_signin' %}">here</a> to sign in.</p>
+    </div>
+
+    
+    <footer>
+        {% include 'footer.html' %}
+    </footer>
+    <div class="messages alert">
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+        </div>
+        {% endfor %}
+
+</body>
+
+</html>

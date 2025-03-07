@@ -1,0 +1,22 @@
+#salary{
+    position: relative;
+    left: 20px;
+    top: 0px;
+    font-size: 18px;
+    font-family:  'Sour Gummy';
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg, #ccd6de, #49dfec);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 20px;
+}
+.footer_bar{
+    z-index: 0;
+
+}
+.aside_bar{
+    z-index: -1;
+}

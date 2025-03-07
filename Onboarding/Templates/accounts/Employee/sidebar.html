@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aside</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="{% static 'css/sidebar.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sour+Gummy">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    {% if user.is_authenticated %}
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="user-profile">
+                <img id="profile-picture" src="{{ user.profile_picture }}" width="50px" height="50px"
+                    alt="User Profile Picture">
+                <h4 id="user-name">{{ user.username }}</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="sidebar-content">
+            <ul>
+                <li><a href="{% url 'emp_home' %}" id="home">Home</a></li>
+                <li><a href="{% url 'emp_profile' %}" id="profile"><span><img
+                                src="{% static 'img/nav_profile_img/sidebar/profile1.png' %} " width="50px"
+                                height="50px"></span> Profile</a></li>
+                <li><a href="{% url 'emp_onboarding' %}" id="onboarding"><span><img
+                                src="{% static 'img/nav_profile_img/sidebar/onboarding.png' %} " width="35px"
+                                height="40px"></span> Onboarding</a></li>
+                <li><a href="{% url 'emp_training' %}" id="training"><span><img
+                                src="{% static 'img/nav_profile_img/sidebar/training.png' %} " width="40px"
+                                height="30px"></span> Training</a></li>
+                <li><a href="{% url 'emp_attendance' %}" id="attendance"><span> <img
+                                src="{% static 'img/nav_profile_img/sidebar/attendance.png' %} " width="35px"
+                                height="35px"></span> Attendance</a></li>
+                <li><a href="{% url 'emp_performance' %}" id="performance"><span><img
+                                src="{% static 'img/nav_profile_img/sidebar/performance.png' %} " width="30px"
+                                height="35px"></span> Performance</a></li>
+                <li><a href="{% url 'emp_documents' %}" id="documents"><span><img
+                                src="{% static 'img/nav_profile_img/sidebar/document.png' %} " width="35px"
+                                height="35px"></span> Documents</a></li>
+                <li><a href="{% url 'emp_salary' %}" id="salary"><span><img
+                                src="{% static 'img/nav_profile_img/sidebar/payroll.png' %} " width="35px"
+                                height="35px"></span> Payroll</a></li>
+                <li><a href="{% url 'emp_feedback' %}" id="feedback"><span><img
+                                src="{% static 'img/nav_profile_img/sidebar/feedback.png' %} " width="35px"
+                                height="35px"></span> Feedback</a></li>
+                <li><a href="{% url 'emp_help_support' %}" id="help_support"><span><img
+                                src="{% static 'img/nav_profile_img/sidebar/help_and_support.png' %} " width="35px"
+                                height="35px"></span> Help & Support</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    {% else %}
+    <h1>Unauthorized</h1>
+    {% endif %}
+</body>
+
+</html>

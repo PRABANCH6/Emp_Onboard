@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/user-login.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css"
+        integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="https://kit.fontawesome.com/14215c5eb7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Font Awesome CDN for icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css"
+        integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    {% comment %} Font cdn link {% endcomment %}
+    <script src="https://kit.fontawesome.com/14215c5eb7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects Daughter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Macondo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Vinyl">
+
+    <title>Users Sign-in</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <header> {% include 'header.html' %} </header>
+    <div class="container1">
+        <div class="left_content">
+            <img src="{% static 'img/login.png' %}" alt="Image" width="500px" height="400px">
+        </div>
+        <div class="right_content">
+            <form method="POST" action="">
+                {% csrf_token %}
+                <h3 id="signin">Employee Login</h3>
+
+                <label for="username" id="username_label">Employee ID</label>
+                <input type="text" name="username" id="input_uname" placeholder="Username" required><br>
+                <label for="password" id="password_label">Password</label>
+
+                <div class="password_input">
+                    <input type="password" id="input_pwd" name="password" placeholder="Password" required>
+                    <i class="fa-regular fa-eye toggle-password" id="toggle_password"></i>
+                </div>
+
+                <div class="employee_login">
+                    <!-- <p>if you are an employee<a href="{% url 'employee_login' %}"> Employee Login</a></p> -->
+                </div>
+                <button type="submit" id="signin_button"><a href="{% url 'employee_login' %}">Sign In</a></button>
+
+                <button type="submit" id="signup_button"><a href="#">Sign Up</a></button>
+
+                <div class="forgot_password">
+
+                </div>
+
+            </form>
+            {% if messages %}
+            {% for User_login_error in messages %}
+            <div class="alert alert-danger" role="alert">
+                {{ User_login_error }}
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+    <div class="signin_footer">
+        {% include 'footer.html' %}
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.toggle-password').on('click', function () {
+                var passwordField = $('#input_pwd');
+                var passwordFieldType = passwordField.attr('type');
+                if (passwordFieldType === 'password') {
+                    passwordField.attr('type', 'text');
+                    $(this).removeClass('fa-eye').addClass('fa-eye-slash');
+                } else {
+                    passwordField.attr('type', 'password');
+                    $(this).removeClass('fa-eye-slash').addClass('fa-eye');
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+body{
+    /* width: 100px; */
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+.header-title{
+    background: #5B9BD5;
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    height: 75px;
+}
+#dateTime{
+    position: absolute;
+    left: 900px;
+    top: 25.5px;
+}
+#username_header{
+    position: absolute;
+    left: 1150px;
+    top: 25px;
+}
+#page_title{
+    position: absolute;
+    left: 320px;
+    top: 23.5px;
+    font: 700;
+    font-size: 20px;
+    font-family: 'Sur Gummy';
+}
+#header_logout{
+    position: absolute;
+    left: 1400px;
+    top: 20px;
+    transition: transform 0.5s ease;
+}
+#header_logout:hover{
+    cursor: pointer;
+    transform: scale3d(1.4, 1.4, 1);
+}
+#header_settings{
+    position: absolute;
+    left: 1350px;
+    top: 20px;
+    transition: transform 1s ease;
+}
+#header_settings:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+
+
+}
+#header_settings:active{
+    cursor: pointer;
+    transform: scale3d(1.4, 1.4, 1);
+}
+#header_notifications{
+    position: absolute;
+    left: 1300px;
+    top: 20px;
+    transition: transform 0.5s ease;
+}
+#header_notifications:hover{
+    cursor: pointer;
+    transform: scale3d(1.4, 1.4, 1);
+}
+/* #header_settings{
+    transition: transform 0.5s ease;
+}
+#header_settings:hover{
+    transform: rotate(360deg);
+} */

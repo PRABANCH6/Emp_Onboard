@@ -1,0 +1,14 @@
+#leaves{ 
+    color: #070707;
+    font-weight: 500;
+    position: relative;
+    left: 10px;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(249, 247, 247, 0.931);
+    transition: 1s ease-out;
+    font-family:'Sour Gummy';
+    background: linear-gradient(180deg, #ccd6de, #49dfec);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

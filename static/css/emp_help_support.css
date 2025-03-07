@@ -1,0 +1,29 @@
+#help_support{
+    position: relative;
+    left: 15px;
+    top: 0px;
+    font-size: 18px;
+    font-family:  'Sour Gummy';
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    background: linear-gradient(180deg,  #49dfec,#070808);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 20px;
+    
+}
+
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 700px;
+    position: absolute;
+    left: 65%;
+    top: 180%;
+    transform: translate(-50%, -50%);
+  
+
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/emp_performance.css' %}">
+    <title>Employee Performance</title>
+</head>
+
+<body>
+    <header class="header">
+        {% include 'accounts/Employee/employee_header.html' %}
+    </header>
+    <div class="aside_bar">
+        {% include 'accounts/Employee/sidebar.html' %}
+    </div>
+
+
+</body>
+
+</html>

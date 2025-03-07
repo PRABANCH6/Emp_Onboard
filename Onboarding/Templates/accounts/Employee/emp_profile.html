@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/emp_profile.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noteworthy">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sour+Gummy">
+    <script src="{% static 'js/emp_profile.js'%}"></script>
+
+    <title class="page_title">{% block title %} Profile {% endblock %}</title>
+</head>
+
+<body>
+
+    <!-- font links html -->
+    {% include 'fonts.html' %}
+    <header class="header">
+        {% include 'accounts/Employee/employee_header.html' %}
+    </header>
+
+    <div class="aside_bar">
+        {% include 'accounts/Employee/sidebar.html' %}
+    </div>
+    <!-- <h2 class="profile-title"> title:{{ title }}</h2> -->
+    <!-- we work with the main part -->
+    <main class="profile_container">
+        <div class="main">
+            <div class="profile-picture">
+
+                <!-- put the employee's picture here -->
+                <img id="profile_picture" src="https://www.gravatar.com/avatar/205e460b479e2e5b48cfe37816476069?s=200"
+                    alt="Employee's Picture">
+                <div class="edit-picture">
+                    <!-- put the edit picture button here -->
+                    <button class="edit-button"><a href="#"><img id="edit_profile_button"
+                                src="{% static 'img/edit.png' %}" width="30px" height="30px"></a></button>
+
+                </div>
+                <div class="profile-info">
+                    <!-- <p class="name"><strong>Name:</strong> {{ employee.first_name }} {{ employee.last_name }}</p>
+                                        <p class="email"><strong>Email:</strong> {{ employee.email }}</p>
+                                        <p class="role"><strong>Role:</strong> {{ employee.role }}</p>
+                                        <p class="phone"><strong>Phone Number:</strong> {{ employee.phone_number }}</p>
+                                        <p class="address"><strong>Address:</strong> {{ employee.address }}</p> -->
+                    <p class="name"> <span>Name:</span>{{ employee.first_name }} {{ employee.last_name }}</p>
+                    <p class="status" id="active">Active</p>
+                    <p class="role">Role: {{ employee.role }}</p>
+                    <p class="position">Position:{{ employee.position }} </p><br>
+                    <p class="email">E-mail: {{ employee.email }} </p>
+                    <p class="phone">Phone Number: {{ employee.phone_number }} </p>
+                    <p class="company">Company: {{ employee.company }}</p>
+
+
+                </div>
+
+                <div class="social-media">
+                    <ul class="social-media-list">
+                        <li><a href="#"><img src="{% static 'img/facebook.png' %}" width="32" height="32"></a></li>
+                        <li><a href="#"><img src="{% static 'img/Linkedin.png' %}" width="40" height="32"></a></li>
+                        <li><a href="#"><img src="{% static 'img/twitter.png' %}" width="40" height="36"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="calender_Event">
+                <h3 id="calender_event_title">Upcoming Events</h3>
+                <hr>
+                {% if events %}
+                {% for event in events %}
+                <div class="event">
+                    <p class="date">{{ event.start }}</p>
+                    <h2>{{ event.summary }}</h2>
+                    {% if event.description %}
+                    <p><strong>Description:</strong> {{ event.description }}</p>
+                    {% endif %}
+                    {% if event.location %}
+                    <p><strong>Location:</strong> {{ event.location }}</p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+                {% else %}
+
+                <p id="event_update">No upcoming events found.</p>
+                {% endif %}
+            </div>
+            <div class="info_container">
+                <div class="basic_information">
+                    <h3 id="basic_info_title">Basic Information <span>(Non-Editable)</span></h3>
+                    <table class="info_table">
+                        <!-- <tr class="basic_info_(Non-Editable)">Basic Information</tr> -->
+                        <tr>
+                            <th colspan="2">Hire Date</th>
+                            <th>Worked for</th>
+                            <th>Employee ID</th>
+                            <!-- <td>{{ employee.hire_date }}</td> -->
+                        </tr>
+                        <tr>
+                            <td readonly> {{ employee.hire_date }} </td>
+                            <td readonly>{{ employee.worked_for }}</td>
+                            <td readonly>{{ employee.employee_id }}</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <hr>
+                <div class="personal_information">
+                    <h3 id="personal_info_title">Personal Information<span>(Editable)</span></h3>
+                    <table class="info_table">
+                        <tr>
+                            <th colspan="1">Birth Date</th>
+                            <th colspan="4">Address</th>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td><input type="date" id="birth_date" value="{{employee.birth_date}}"></td>
+
+                            <td>
+                                <!-- <label for="street">Street1</label> -->
+                                <input id="employee_street1" type="text" value="{{employee.address_street1}}"
+                                    placeholder="Street1" required>
+                                <!-- <label for="street">Street2</label> -->
+                                <input type="text" id="employee_street2" value="{{employee.address.street2}}"
+                                    placeholder="Street2">
+                                <!-- <label for="city">City</label> -->
+                                <input type="text" id="employee_city" value="{{employee.city}}" placeholder="City">
+                                <!-- <label for="state">State</label> -->
+                                <input id="employee_state" type="text" value="{{employee.state}}" placeholder="State">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <br>
+                <div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+        </div>
+
+
+
+    </main>
+
+
+
+</body>
+
+</html>

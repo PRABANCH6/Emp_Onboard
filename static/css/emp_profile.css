@@ -1,0 +1,467 @@
+*{
+    font-family: 'Sur Gummy';
+    
+}
+
+
+#profile{
+    position: relative;
+    left: 20px;
+    top: 0px;
+    font-size: 18px;
+    font-family:  'Sour Gummy';
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg, #ccd6de, #49dfec);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 20px;
+
+
+}
+.profile_container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 700px;
+    position: absolute;
+    left: 45%;
+    top: 200px;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+
+}
+.profile-info{
+    position: absolute;
+    left: 200px;
+    top: 55px;
+    font-family: 'Architects Daughter';
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #0e0d0d;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#profile_img{
+    position: relative;
+    left: 50px;
+    top: 0px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;  
+}
+#profile_details{
+    position: relative;
+    left: 50px;
+    top: 20px;
+    font-size: 20px;
+    font-family: 'Architects Daughter';
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    line-height: 15px;
+    color: #0e0d0d;
+    font-weight: 900;
+}
+#edit_profile_button{
+    position: relative;
+    left: 50px;
+    top: 40px;
+    font-size: 20px;
+    font-family: 'Architects Daughter';
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    line-height: 15px;
+    color: #0e0d0d;
+    font-weight: 900;
+}
+#profile_picture{
+    border-radius: 50%;
+    width: 150px;
+    position: inherit;
+    left: 20px;
+    top: 50px;
+}
+.profile-picture{
+    position: relative;
+    left: -30px;
+    box-shadow: 1px 1px 10px rgba(233, 215, 215);
+    height: 280px;
+    border-radius: 16px;
+    width: 600px;
+}
+.edit-button{
+    position: absolute;
+    left: 135px;
+    top: 155px;    
+    border-radius: 0%;
+    background: transparent;
+    border: none;
+    z-index: 1;
+
+}
+
+#edit_profile_button{
+    border-radius: 50%;
+    position: inherit;
+    left: 50px;
+    top: 40px;
+    border: none;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0);
+}
+#active{
+    padding:10px;
+    border-radius: 5px;
+    box-shadow:1px 1px 20px rgba(0, 0, 0, 0.3);
+    /* font-family: 'Sour Gummy'; */
+    font-family: 'Architects Daughter';
+    font-size: 17px;
+    border: none;
+    background-color: #13db20;
+    color: #fff;
+    position: absolute;
+    left: 150px;
+    top: -40px;
+}
+.name{
+    position: absolute;
+    top: -30px;
+    font: 600;
+    font-size: 30px;
+}
+.email{
+    position: absolute;
+    top: 30px;
+}
+.role{
+    position: absolute;
+    /* left: 200px; */
+    top: 16px;
+}
+.phone{
+    position: absolute;
+
+    top: 60px;
+    width: 200px;
+}
+.address{
+    position: absolute;
+    left: 200px;
+    top: 60px;
+}
+.position{
+    position: absolute;
+    left: 165px;
+    top: 15px;
+    width: 100px;
+}
+.email {
+    position: absolute;
+    width: 200px;
+    top: 60px;
+}
+.phone{
+    position: absolute;
+    width: 200px;
+    top: 100px;
+}
+.company{
+    position: absolute;
+   width: 250px;
+    top: 140px;
+}
+
+.social-media{
+    position: absolute;
+    left: 230px;
+    top: 230px;
+
+}
+.social-media ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+.social-media li {
+    display: inline-block;
+    margin-right: 10px;
+    }
+
+.social-media a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+.calender_Event{
+    width: 400px;
+    box-shadow: 1px 1px 10px rgba(233, 215, 215);
+    height: 280px;
+    border-radius: 16px;
+    position: absolute;
+    left: 630px;
+    top: 20px;
+}
+.event{
+    background-color: #ccd6de;
+}
+#event_update{
+    position: relative;
+    left:30px;
+    background-color: #e1c6c6;
+    width: 300px;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(233, 215, 215);
+    font:600px;
+    border-radius: 16px;
+    /* position: absolute;
+    left: 630px;
+    top: 20px;
+     */
+
+}
+#calender_event_title{
+    position: relative;
+    left: 90px;
+    padding: 10px;
+}
+.profile-title{
+    position: relative;
+    left: 30px;
+    top: 5px;
+    font: 700;
+    font-size: 36px;
+    font-family: 'Sur Gummy';
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.calendar {
+    display: inline-block;
+    /* border: 1px solid #ccc; */
+    box-shadow: 1px 1px 10px rgba(233, 215, 215);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.calendar-days div {
+    font-weight: bold;
+}
+
+/* .calendar-dates div.today {
+    background-color: #9c9393;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+} */
+
+.calendar-dates div.today {
+    background-color: #edc9c9;
+}
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-dates div {
+    padding: 10px;
+    /* background-color: #f9f9f9; */
+    /* border: 1px solid #ddd; */
+    border-radius: 4px;
+}
+
+.calendar-dates div:hover {
+    background-color: #ececec;
+}
+
+/* table for basic informations */
+/* 
+.info_container{
+    width: 500px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0,0.3); ;
+    padding:10px;
+    margin: 10px;
+    border-radius: 16px;
+
+} */
+
+/* 
+#emp_state{
+    border-top: none;
+    border-bottom: 1px #333 solid;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+
+} */
+ #birth_date{
+    border-top: none;
+    border-bottom: 1px #333 solid;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+ }
+ 
+.info_container{
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: absolute;
+    left: -20px;
+    width: 1024px;
+    font-size: 16px;
+    font-family:  'Sour Gummy';
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    height: 350px;
+    border-radius: 16px;
+    /* background: linear-gradient(180deg, #ccd6de, #49dfec);
+    -webkit-background-clip: text; */
+    /* background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-weight: 900;
+    font-size: 20px;
+    /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3); */
+    box-shadow: 1px 1px 10px rgba(233, 215, 215);
+
+ }  
+#employee_street1, #employee_street2, #employee_city{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font-size: 18px;
+    font-family:  'Sour Gummy';
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg, #bebec2, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px rgb(165, 160, 160, 0.3) solid;
+ }
+ #employee_state{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font-size: 18px;
+    font-family:  'Sour Gummy';
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg, #bebec2, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px rgb(165, 160, 160, 0.3) solid;
+ }
+ #birth_date{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font-size: 18px;
+    font-family:  'Sour Gummy';
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg, #bebec2, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px rgb(165, 160, 160, 0.3) solid;
+ }
+ table{
+   
+    font-size: 18px;
+    font-family:  'Sour Gummy';
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg, #bebec2, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+ }
+ th{
+  
+    font-size: 18px;
+    font-family:  'Sour Gummy';
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg, #bebec2, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+ }
+ td{
+ 
+    font-size: 18px;
+    font-family:  'Sour Gummy';
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg, #bebec2, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+ }

@@ -1,0 +1,127 @@
+.toggle_switch{
+    position: absolute;
+    display: inline-block;
+    top: 200px;
+    width: 230px;
+    height: 54px;   
+    border-radius: 34px;
+    cursor: pointer;
+    left: 700px;
+    background-color: aliceblue;
+}
+
+.emp_login_container{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 600px;
+    position: absolute; 
+    top: 70%;
+    left: 50%; 
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    /* background-color: aquamarine; */
+}
+.emp_login_title{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-family: 'Rock Salt';
+    letter-spacing: 3px;
+    word-spacing: 2px;
+}
+form {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   
+
+    /* background-color: rgb(156, 172, 167); */
+}
+.emp_login_container h1{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-family: 'Rubik Vinyl';
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+.emp_login_container label{
+    
+    font-family: 'Raleway';
+    font-size: 20px;
+    letter-spacing: 1px;
+    font: 400;
+}
+.emp_login_container input{
+    width: 300px;
+    height: 40px;
+    border-radius: 22px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 0px 0px rgb(0, 0, 0,0.3);
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+#toggle_btn_login{
+    position: relative;
+    left: 10px;
+    top: 15px;
+    border-radius: 34px;
+    background-color: rgb(229, 224, 121);
+    width: 200px;
+    height: 54px;  
+    padding: 10px 30px;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: transform 0.5s;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+    transition: box-shadow 0.5s;
+    transition: border-radius 0.5s;
+    transition: padding 0.5s;
+    transition: width 0.5s;
+    transition: height 0.5s;
+    transition: font-size 0.5s;
+    transition: text-decoration 0.5s;
+    transition: text-transform 0.5s;
+    transition: letter-spacing 0.5s;
+    transition: word-spacing 0.5s;
+    transition: font-family 0.5s;
+    transition: font-weight 0.5s;
+    transition: font-style 0.5s;
+    transition: font-variant 0.5s;
+}
+
+#toggle_btn_signup{
+    position: relative;
+    left:20px;
+    top:15px;
+    border-radius: 34px;
+    /* background-color: rgb(229, 224, 121); */
+    width: 200px;
+    height: 54px;  
+    padding: 10px 30px;
+    color: black;
+    text-decoration: none;
+
+}
+.login-form{
+    position: relative;
+    left: 20px;
+    top: 30px;
+    /* border-radius: 34px;   */
+    width: 700px;
+    height: 504px;
+    padding: 10px 30px;
+    background-color: rgb(229, 224, 121);
+    color: black;  
+
+}
+
